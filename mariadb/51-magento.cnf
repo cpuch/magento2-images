@@ -1,0 +1,10 @@
+# Configuration pour Magento 2
+#
+# https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql
+# https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration
+[mysqld]
+
+# La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les versions précédentes de MariaDB ou de MySQL.
+# Pour accélérer la réindexation, nous vous recommandons de définir les paramètres de configuration MariaDB suivants
+optimizer_switch='rowid_filter=off'
+optimizer_use_condition_selectivity = 1

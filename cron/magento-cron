@@ -1,0 +1,2 @@
+SHELL=/usr/bin/bash
+* * * * * cd /var/www/html && /usr/local/bin/php bin/magento cron:run 2>&1

@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "magento2",
+      "password_hash": "e8XCOTJ9blcHXhH99dll1JdAvROROxKVbrQgQCe8wNbY95EL",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "magento2",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "parameters": [],
+  "policies": [],
+  "queues": [],
+  "exchanges": [],
+  "bindings": []
+}
